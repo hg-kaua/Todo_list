@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Muli';
+}
+.container {
+    margin-top: 50px;
+    background-color: #333333;
+    color: aliceblue;
+    max-width: 50vw;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+
+}
+.list {
+    display: flex;
+    color: #7f8090;
+    align-items: center;
+    width: 40vw;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px black;
+    margin-top: 30px;
+}
+.create-Btn {
+    margin-top: 30px;
+    width: 40vw;
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+    background: linear-gradient(to left, #FF842B, #EB274B);
+    border-radius: 5px;
+}
