@@ -9,12 +9,18 @@ inputTask.addEventListener('keypress', (event)=>{
 
         const list = document.createElement('section');
         list.classList.add('list');
+        display.appendChild(list)
 
+        const checkbox = document.createElement('input')
+        checkbox.setAttribute('type', 'checkbox')
+        checkbox.classList.add('checkbox');
+        
         const yourTask = document.createElement('input');
         yourTask.classList.add('input-task');
         yourTask.value = task;
 
-        display.appendChild(list).appendChild(yourTask);
+        list.appendChild(checkbox)
+        list.appendChild(yourTask)
         inputTask.value = '';
         
         const deleteBtn = document.createElement('button');
