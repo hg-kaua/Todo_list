@@ -2,7 +2,6 @@ let task;
 const display = document.querySelector('main')
 const inputTask = document.querySelector('.input-task');
 
-
 inputTask.addEventListener('keypress', (event)=>{
     if(event.key === 'Enter') {
         task = inputTask.value;
@@ -18,6 +17,16 @@ inputTask.addEventListener('keypress', (event)=>{
         const yourTask = document.createElement('input');
         yourTask.classList.add('input-task');
         yourTask.value = task;
+                
+        checkbox.addEventListener('click', ()=> {
+            if(yourTask.classList.value === 'input-task') {
+                yourTask.classList.add('input-task-done'); 
+                
+            } else {
+                yourTask.classList.remove('input-task-done');
+                
+            }
+        })
 
         list.appendChild(checkbox)
         list.appendChild(yourTask)
@@ -28,6 +37,7 @@ inputTask.addEventListener('keypress', (event)=>{
         deleteBtn.textContent = 'X';
         list.appendChild(deleteBtn);
 
+        
         deleteBtn.addEventListener('click', () =>{list.remove()});
     } 
 }); 

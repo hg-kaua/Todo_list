@@ -6,6 +6,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Muli';
+    background-color: #824cc6;
 }
 .container {
     margin-top: 50px;
@@ -19,6 +20,7 @@ body {
 }
 
 .list {
+    background-color: white;
     display: flex;
     color: #7f8090;
     align-items: center;
@@ -52,13 +54,17 @@ body {
 }
 .checkbox {
     margin-left: 20px;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     transition: transform 0.5s;
+    color: #49a52c;
 }
 .checkbox:hover {
     transform: scale(0.95);
+}
+.checkbox:active {
+    background-color: green;
 }
 .create-btn {
     margin-top: 30px;
@@ -73,10 +79,16 @@ body {
    
 }
 .input-task {
+    background-color: ;
     border: none;
     width: 40vw;
     outline: none;
     font-family: 'Muli';
+}
+.input-task-done {
+    text-decoration: line-through;
+    color: #49a52c;
+    font-style: italic;
 }
 
 
