@@ -66,20 +66,7 @@ body {
 .checkbox:active {
     background-color: green;
 }
-.create-btn {
-    margin-top: 30px;
-    width: 40vw;
-    padding: 10px;
-    border: none;
-    color: aliceblue;
-    background: linear-gradient(to left, #FF842B, #EB274B, #FF842B);
-    animation: colors 25s ease infinite;
-    border-radius: 5px;
-    cursor: pointer;
-   
-}
 .input-task {
-    background-color: ;
     border: none;
     width: 40vw;
     outline: none;
